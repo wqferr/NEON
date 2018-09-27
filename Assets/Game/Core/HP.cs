@@ -5,8 +5,8 @@ namespace Neon.Core
 	public class HP : MonoBehaviour
 	{
 
-		public delegate void DeathEventHandler(GameObject deadObject);
-		public event DeathEventHandler DeathEvent;
+		public delegate void DeadEventHandler(GameObject deadObject);
+		public event DeadEventHandler DeadEvent;
 
 		public int value
 		{
@@ -45,7 +45,7 @@ namespace Neon.Core
 
 		void Death()
 		{
-			this.DeathEvent?.Invoke(this.gameObject);
+			this.DeadEvent?.Invoke(this.gameObject);
 		}
 	}
 }
