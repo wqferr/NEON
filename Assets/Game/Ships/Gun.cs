@@ -2,7 +2,7 @@
 
 namespace NeonChaser.Core
 {
-	public class ShipGun : MonoBehaviour
+	public class Gun : MonoBehaviour
 	{
 		public GameObject shotPrefab;
 		public Transform Transform { get; private set; }

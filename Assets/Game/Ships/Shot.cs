@@ -3,7 +3,7 @@
 namespace NeonChaser.Core
 {
 	[RequireComponent(typeof(Collider)), DisallowMultipleComponent]
-	public class ShipGunShot : MonoBehaviour
+	public class Shot : MonoBehaviour
 	{
 		public int damage;
 		public float speed;
@@ -17,7 +17,7 @@ namespace NeonChaser.Core
 
 		void FixedUpdate()
 		{
-			var velocity = this.transform.forward * this.speed;
+			var velocity = this.Transform.forward * this.speed;
 			var delta = velocity * Time.fixedDeltaTime;
 			this.Transform.Translate(delta);
 		}
