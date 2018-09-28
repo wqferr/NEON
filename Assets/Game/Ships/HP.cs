@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Neon.Core
+namespace NeonChaser.Core
 {
 	public class HP : MonoBehaviour
 	{
