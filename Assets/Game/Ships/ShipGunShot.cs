@@ -2,13 +2,13 @@
 
 namespace NeonChaser.Core
 {
-	[RequireComponent(typeof(Collider2D)), DisallowMultipleComponent]
+	[RequireComponent(typeof(Collider)), DisallowMultipleComponent]
 	public class ShipGunShot : MonoBehaviour
 	{
 		public int damage;
 		public float speed;
 
-		private Transform Transform;
+		public Transform Transform { get; private set; }
 
 		void Awake()
 		{

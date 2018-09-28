@@ -5,7 +5,7 @@ namespace NeonChaser.Core
 	public class ShipGun : MonoBehaviour
 	{
 		public GameObject shotPrefab;
-		private Transform Transform;
+		public Transform Transform { get; private set; }
 
 		void Awake()
 		{
