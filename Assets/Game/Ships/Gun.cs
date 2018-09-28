@@ -17,7 +17,7 @@ namespace NeonChaser.Core
 			var shot = Instantiate(
 				this.shotPrefab,
 				this.Transform.position,
-				Quaternion.LookRotation(this.Transform.forward));
+				this.Transform.rotation);
 		}
 	}
 }

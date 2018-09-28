@@ -17,7 +17,7 @@ namespace NeonChaser.Core
 
 		void FixedUpdate()
 		{
-			var velocity = this.Transform.forward * this.speed;
+			var velocity = Vector3.forward * this.speed;
 			var delta = velocity * Time.fixedDeltaTime;
 			this.Transform.Translate(delta);
 		}
