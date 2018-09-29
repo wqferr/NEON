@@ -46,10 +46,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4161237815258277830}
-  - component: {fileID: 5323719107246223421}
   - component: {fileID: 1534961411542520711}
   - component: {fileID: 8021087263672328512}
+  - component: {fileID: 5323719107246223421}
   - component: {fileID: 6429116523659113868}
+  - component: {fileID: 3317690862053206367}
   m_Layer: 9
   m_Name: Player Ship
   m_TagString: Player
@@ -73,19 +74,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5323719107246223421
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4161237815258277829}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 359f953853371744387c09df51881bc8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  max: 1
 --- !u!54 &1534961411542520711
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -95,7 +83,7 @@ Rigidbody:
   m_GameObject: {fileID: 4161237815258277829}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0
+  m_Drag: 3
   m_AngularDrag: 0.05
   m_UseGravity: 0
   m_IsKinematic: 0
@@ -116,6 +104,19 @@ CapsuleCollider:
   m_Height: 1.5
   m_Direction: 1
   m_Center: {x: 0, y: 0.375, z: 0}
+--- !u!114 &5323719107246223421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4161237815258277829}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 359f953853371744387c09df51881bc8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  max: 1
 --- !u!114 &6429116523659113868
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -129,6 +130,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gunContainer: {fileID: 9148754154373514977}
+--- !u!114 &3317690862053206367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4161237815258277829}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba6f02700b4129e4c91a65309883c4a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxForce: 3
+  currentForce: 0
 --- !u!1 &4618263944764797517
 GameObject:
   m_ObjectHideFlags: 0
